@@ -94,21 +94,6 @@ const OwnerLayout: React.FC<OwnerLayoutProps> = ({
           </NavLink>
 
           <NavLink
-            to="/owner/schedule"
-            className={({ isActive }) =>
-              `admin-sidebar__link ${
-                isActive ? "admin-sidebar__link--active" : ""
-              }`
-            }
-            onClick={closeSidebar}
-          >
-            <span>
-              <span className="admin-sidebar__link-icon">🕒</span>
-              <span className="admin-sidebar__link-text">Horario</span>
-            </span>
-          </NavLink>
-
-          <NavLink
             to="/owner/disabled-slots"
             className={({ isActive }) =>
               `admin-sidebar__link ${
